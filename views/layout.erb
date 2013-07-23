@@ -2,11 +2,13 @@
 <html>
   <head>
     <title>My First App</title>
-    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/application.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/application.js"></script>
   </head>
-  <body style="padding-top: 50px; background-color: white;" >
-  <script src="js/bootstrap.min.js"></script>
+  <body style="padding-top: 50px;">
+
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -24,7 +26,8 @@
     <%if @success %>
       <div class="alert alert-success"><%=@success%></div>
     <% end %>
-    <%= yield %>
+
+      <%= yield %>
   </div>
   </body>
 </html>
